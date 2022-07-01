@@ -28,7 +28,8 @@ class App:
         pygame.init()
         self.screen = pygame.display.set_mode((self.width, self.height))
         pygame.display.set_caption('Speed Typing Test')
-        pygame.display.set_icon(pygame.image.load('assets/images/icon.png'))
+        icon = pygame.image.load('assets/images/icon.png')
+        pygame.display.set_icon(icon)
 
         self.img = pygame.image.load('assets/images/loading screen.png')
         self.img = pygame.transform.scale(self.img, (self.width, self.height))
